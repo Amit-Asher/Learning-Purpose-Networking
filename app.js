@@ -7,5 +7,5 @@ app.listen(port, function(req, res) {
 });
 
 app.get("/", (req, res) => { 
-	res.send("test");
+	res.sendFile(__dirname + "/site_404.html");
 });
